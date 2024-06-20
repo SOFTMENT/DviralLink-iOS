@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XwW-Co-7hw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About The App-->
+        <scene sceneID="trC-Pi-1lE">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="ltT-s6-cxZ" customClass="AboutTheAppViewController" customModule="DropIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="loK-pE-lgr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLogo" translatesAutoresizingMaskIntoConstraints="NO" id="zIG-zE-VuM">
+                                <rect key="frame" x="157" y="158" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Z8R-qP-eQY"/>
+                                    <constraint firstAttribute="height" constant="100" id="h0b-EX-9tH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bm4-wc-sK5">
+                                <rect key="frame" x="165" y="273" width="84.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bo1-IT-JFH">
+                                <rect key="frame" x="40" y="331" width="334" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiA-Tt-YcG">
+                                <rect key="frame" x="176" y="429" width="62" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moA-EJ-54i">
+                                <rect key="frame" x="179" y="472" width="56" height="56"/>
+                                <state key="normal" image="icInstagram"/>
+                                <connections>
+                                    <action selector="tappedInstagram:" destination="ltT-s6-cxZ" eventType="touchUpInside" id="a9F-MG-15D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXE-t0-uKX">
+                                <rect key="frame" x="83" y="472" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="gsE-tl-FzI"/>
+                                    <constraint firstAttribute="height" constant="56" id="qVG-EB-RAs"/>
+                                </constraints>
+                                <state key="normal" image="icTelegram"/>
+                                <connections>
+                                    <action selector="tappedTelegram:" destination="ltT-s6-cxZ" eventType="touchUpInside" id="Zsa-HY-srT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLo-MT-p1R">
+                                <rect key="frame" x="275" y="472" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="Hgw-YM-PP5"/>
+                                    <constraint firstAttribute="height" constant="56" id="n5C-El-cyR"/>
+                                </constraints>
+                                <state key="normal" image="icMail"/>
+                                <connections>
+                                    <action selector="tappedMail:" destination="ltT-s6-cxZ" eventType="touchUpInside" id="BCv-gA-6Pf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9gx-LJ-WXV"/>
+                        <color key="backgroundColor" red="0.1185997352" green="0.1181912348" blue="0.1343346238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zIG-zE-VuM" firstAttribute="top" secondItem="9gx-LJ-WXV" secondAttribute="top" constant="70" id="2OK-BY-YQy" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2G">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Pro">
+                                        <real key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11">
+                                        <real key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Max">
+                                        <real key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone12Mini">
+                                        <real key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone12">
+                                        <real key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone12ProMax">
+                                        <real key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="9gx-LJ-WXV" firstAttribute="trailing" secondItem="Bo1-IT-JFH" secondAttribute="trailing" constant="40" id="3cG-zI-jlO"/>
+                            <constraint firstItem="moA-EJ-54i" firstAttribute="leading" secondItem="ZXE-t0-uKX" secondAttribute="trailing" constant="40" id="7rT-jV-Rgg"/>
+                            <constraint firstItem="iLo-MT-p1R" firstAttribute="leading" secondItem="moA-EJ-54i" secondAttribute="trailing" constant="40" id="FKx-Gn-d6g"/>
+                            <constraint firstItem="bm4-wc-sK5" firstAttribute="centerX" secondItem="loK-pE-lgr" secondAttribute="centerX" id="Njr-35-b6U"/>
+                            <constraint firstItem="moA-EJ-54i" firstAttribute="centerX" secondItem="loK-pE-lgr" secondAttribute="centerX" id="Q0F-3R-WQS"/>
+                            <constraint firstItem="zIG-zE-VuM" firstAttribute="centerX" secondItem="loK-pE-lgr" secondAttribute="centerX" id="TUr-sg-gSm"/>
+                            <constraint firstItem="ZXE-t0-uKX" firstAttribute="top" secondItem="kiA-Tt-YcG" secondAttribute="bottom" constant="25" id="W32-2i-TV1"/>
+                            <constraint firstItem="iLo-MT-p1R" firstAttribute="top" secondItem="kiA-Tt-YcG" secondAttribute="bottom" constant="25" id="aAr-0U-j1b"/>
+                            <constraint firstItem="kiA-Tt-YcG" firstAttribute="centerX" secondItem="loK-pE-lgr" secondAttribute="centerX" id="bm5-MF-qGR"/>
+                            <constraint firstItem="Bo1-IT-JFH" firstAttribute="leading" secondItem="9gx-LJ-WXV" secondAttribute="leading" constant="40" id="d7T-L1-hgY"/>
+                            <constraint firstItem="moA-EJ-54i" firstAttribute="top" secondItem="kiA-Tt-YcG" secondAttribute="bottom" constant="25" id="erp-ee-Ydl"/>
+                            <constraint firstItem="kiA-Tt-YcG" firstAttribute="top" secondItem="Bo1-IT-JFH" secondAttribute="bottom" constant="80" id="kQh-TL-jHi" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Pro">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Max">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone12Mini">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone12">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone12ProMax">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2G">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="bm4-wc-sK5" firstAttribute="top" secondItem="zIG-zE-VuM" secondAttribute="bottom" constant="15" id="nfK-kE-xtt"/>
+                            <constraint firstItem="Bo1-IT-JFH" firstAttribute="top" secondItem="bm4-wc-sK5" secondAttribute="bottom" constant="40" id="saH-sg-LrG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About The App" id="Eo5-NT-IAE">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="SSh-xl-NKX">
+                            <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                            <connections>
+                                <action selector="tappedBack:" destination="ltT-s6-cxZ" id="691-0h-ba3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aboutLabel" destination="Bo1-IT-JFH" id="ZEg-9I-KdH"/>
+                        <outlet property="mailButton" destination="iLo-MT-p1R" id="m3w-iv-B3s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2of-7a-OIh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366.6666666666667" y="99.776785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CRE-Ch-KIc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="XwW-Co-7hw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XY6-AR-db8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ltT-s6-cxZ" kind="relationship" relationship="rootViewController" id="AGD-CX-Dir"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUk-tC-Lcm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457.97101449275368" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="icInstagram" width="56" height="56"/>
+        <image name="icLogo" width="156" height="84"/>
+        <image name="icMail" width="64" height="64"/>
+        <image name="icTelegram" width="64" height="64"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

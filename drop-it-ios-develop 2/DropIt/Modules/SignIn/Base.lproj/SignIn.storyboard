@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="BYZ-38-t0r" customClass="SignInViewController" customModule="DropIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgSignIn" translatesAutoresizingMaskIntoConstraints="NO" id="n9L-so-PuF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view alpha="0.51000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FqV-jn-Ydx" userLabel="Back View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvc-Rc-nWg" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLogo" translatesAutoresizingMaskIntoConstraints="NO" id="eap-5k-Qgg">
+                                        <rect key="frame" x="151" y="70" width="112" height="74"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CK4-AE-sih" userLabel="Email View">
+                                        <rect key="frame" x="54" y="224" width="306" height="60"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icEmail" translatesAutoresizingMaskIntoConstraints="NO" id="ZCt-l9-YOz">
+                                                <rect key="frame" x="17" y="22" width="20" height="16"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C6m-tR-84s" userLabel="Email Text Field">
+                                                <rect key="frame" x="42" y="5" width="240" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="1" alpha="0.84607769691780821" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.87308233980000005" green="0.87320822480000004" blue="0.8730548024" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="C6m-tR-84s" firstAttribute="top" secondItem="CK4-AE-sih" secondAttribute="top" constant="5" id="4Sb-H7-nq3"/>
+                                            <constraint firstItem="C6m-tR-84s" firstAttribute="leading" secondItem="ZCt-l9-YOz" secondAttribute="trailing" constant="5" id="Owi-MO-ILZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="C6m-tR-84s" secondAttribute="trailing" constant="24" id="W99-iS-es8"/>
+                                            <constraint firstItem="C6m-tR-84s" firstAttribute="bottom" secondItem="CK4-AE-sih" secondAttribute="bottom" constant="-5" id="tuf-dl-i4V"/>
+                                            <constraint firstItem="ZCt-l9-YOz" firstAttribute="centerY" secondItem="CK4-AE-sih" secondAttribute="centerY" id="ty3-AN-qxI"/>
+                                            <constraint firstItem="ZCt-l9-YOz" firstAttribute="leading" secondItem="CK4-AE-sih" secondAttribute="leading" constant="17" id="u1u-XT-15C"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4OT-an-6c5" userLabel="Password View">
+                                        <rect key="frame" x="54" y="304" width="306" height="60"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icPassword" translatesAutoresizingMaskIntoConstraints="NO" id="kOP-Ax-cnq">
+                                                <rect key="frame" x="17" y="19.666666666666686" width="18" height="21"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ci-yc-ey0" userLabel="Password Text Field">
+                                                <rect key="frame" x="40" y="5" width="214" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="1" alpha="0.84607769690000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A5-1I-iK6" userLabel="Eye Button">
+                                                <rect key="frame" x="262" y="19" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="7A5-1I-iK6" secondAttribute="height" multiplier="1:1" id="Zua-RI-15U"/>
+                                                </constraints>
+                                                <state key="normal" image="icCloseEyePassword"/>
+                                                <connections>
+                                                    <action selector="tappedEyePasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vQe-vb-E5c"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.87308233980000005" green="0.87320822480000004" blue="0.8730548024" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="3ci-yc-ey0" firstAttribute="bottom" secondItem="4OT-an-6c5" secondAttribute="bottom" constant="-5" id="8wE-uj-C5J"/>
+                                            <constraint firstItem="7A5-1I-iK6" firstAttribute="leading" secondItem="3ci-yc-ey0" secondAttribute="trailing" constant="8" id="9P1-Yl-4cd"/>
+                                            <constraint firstItem="3ci-yc-ey0" firstAttribute="leading" secondItem="kOP-Ax-cnq" secondAttribute="trailing" constant="5" id="TuV-Sf-sWf"/>
+                                            <constraint firstItem="7A5-1I-iK6" firstAttribute="trailing" secondItem="4OT-an-6c5" secondAttribute="trailing" constant="-20" id="ZM4-A8-OJI"/>
+                                            <constraint firstItem="kOP-Ax-cnq" firstAttribute="leading" secondItem="4OT-an-6c5" secondAttribute="leading" constant="17" id="jdG-Ho-Z1L"/>
+                                            <constraint firstItem="kOP-Ax-cnq" firstAttribute="centerY" secondItem="4OT-an-6c5" secondAttribute="centerY" id="jfp-pA-24e"/>
+                                            <constraint firstItem="3ci-yc-ey0" firstAttribute="top" secondItem="4OT-an-6c5" secondAttribute="top" constant="5" id="oDB-yw-YBH"/>
+                                            <constraint firstItem="7A5-1I-iK6" firstAttribute="centerY" secondItem="4OT-an-6c5" secondAttribute="centerY" constant="1" id="ymj-4C-LdN"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjO-Bi-F0B">
+                                        <rect key="frame" x="54" y="447" width="306" height="60"/>
+                                        <color key="backgroundColor" red="0.85087287430000003" green="0.12706947330000001" blue="0.31888064739999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="1" alpha="0.84615796232876717" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IiH-vT-Knr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0g-uL-F3a" userLabel="Sign In with Google">
+                                        <rect key="frame" x="54" y="607" width="306" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Sign In with Google" image="icGoogle">
+                                            <color key="titleColor" red="0.23738086219999999" green="0.2367836237" blue="0.26074996589999999" alpha="0.65748073627260273" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedSignInGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pnx-43-3tj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sTu-fK-hat">
+                                        <rect key="frame" x="69.333333333333314" y="379" width="148" height="28"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Forgot your password?">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="14"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedForgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r9o-iU-6VU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing in you have agreed to our" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHf-J8-Re9">
+                                        <rect key="frame" x="88.000000000000014" y="768.66666666666663" width="234.33333333333337" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="GS5-9M-23h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="ul0-fl-07p">
+                                        <rect key="frame" x="97.333333333333329" y="682" width="219.33333333333337" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have the account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjQ-uj-2gI">
+                                                <rect key="frame" x="0.0" y="0.0" width="147.33333333333334" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFa-wQ-Ybs">
+                                                <rect key="frame" x="165.33333333333337" y="0.0" width="54" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29" id="ca3-9k-hf2"/>
+                                                    <constraint firstAttribute="width" constant="54" id="qko-9D-EAt"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Register">
+                                                            <attributes>
+                                                                <color key="NSColor" white="1" alpha="0.90087221750000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" metaFont="system" size="14"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tappedRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wvx-f4-cQb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ISu-3t-Cxh">
+                                        <rect key="frame" x="108.66666666666669" y="779.66666666666663" width="193" height="28.333333333333371"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28.5" id="W6e-MB-MdE"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Terms of Use &amp; Privacy Policy">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="14"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedConditions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDl-mH-qfB"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuQ-3j-UU0">
+                                        <rect key="frame" x="205" y="372" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.85087287430000003" green="0.12706947330000001" blue="0.31888064739999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2i2-4a-6Cq">
+                                        <rect key="frame" x="54" y="527" width="306" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Sign In with Apple" image="icApple">
+                                            <color key="titleColor" red="0.23738086219999999" green="0.2367836237" blue="0.26074996589999999" alpha="0.65748073630000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedSignInWithApple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FfU-tH-7kt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2i2-4a-6Cq" firstAttribute="centerX" secondItem="zvc-Rc-nWg" secondAttribute="centerX" id="0iO-nf-5WF"/>
+                                    <constraint firstItem="7A5-1I-iK6" firstAttribute="width" secondItem="zvc-Rc-nWg" secondAttribute="width" multiplier="0.057971" id="3EY-5D-mMV"/>
+                                    <constraint firstItem="eap-5k-Qgg" firstAttribute="centerX" secondItem="zvc-Rc-nWg" secondAttribute="centerX" id="513-qy-gYJ"/>
+                                    <constraint firstItem="sTu-fK-hat" firstAttribute="top" secondItem="4OT-an-6c5" secondAttribute="bottom" constant="15" id="704-bf-zHn"/>
+                                    <constraint firstItem="4OT-an-6c5" firstAttribute="leading" secondItem="CK4-AE-sih" secondAttribute="leading" id="J3E-Pj-Z71"/>
+                                    <constraint firstItem="ul0-fl-07p" firstAttribute="top" secondItem="C0g-uL-F3a" secondAttribute="bottom" constant="15" id="JL9-fA-s3d"/>
+                                    <constraint firstItem="UuQ-3j-UU0" firstAttribute="centerX" secondItem="zvc-Rc-nWg" secondAttribute="centerX" constant="-2" id="LMJ-Ay-UZp"/>
+                                    <constraint firstItem="C0g-uL-F3a" firstAttribute="top" secondItem="2i2-4a-6Cq" secondAttribute="bottom" constant="20" id="Lp6-b5-CKL"/>
+                                    <constraint firstItem="sTu-fK-hat" firstAttribute="leading" secondItem="CK4-AE-sih" secondAttribute="leading" constant="15.333333333333343" id="M41-Qw-fXM"/>
+                                    <constraint firstItem="C0g-uL-F3a" firstAttribute="trailing" secondItem="CK4-AE-sih" secondAttribute="trailing" id="OD4-vd-dXD"/>
+                                    <constraint firstItem="sjO-Bi-F0B" firstAttribute="leading" secondItem="CK4-AE-sih" secondAttribute="leading" id="Pcq-8h-Bg7"/>
+                                    <constraint firstItem="ISu-3t-Cxh" firstAttribute="top" secondItem="uHf-J8-Re9" secondAttribute="bottom" constant="-6" id="ReS-Mf-tNe"/>
+                                    <constraint firstItem="4OT-an-6c5" firstAttribute="top" secondItem="CK4-AE-sih" secondAttribute="bottom" constant="20" id="Tde-HG-kTr"/>
+                                    <constraint firstItem="uHf-J8-Re9" firstAttribute="centerX" secondItem="zvc-Rc-nWg" secondAttribute="centerX" constant="-1.8333333333333144" id="Tib-CR-iHL"/>
+                                    <constraint firstItem="ISu-3t-Cxh" firstAttribute="centerX" secondItem="zvc-Rc-nWg" secondAttribute="centerX" constant="-1.8333333333333144" id="Z7J-Xm-hkx"/>
+                                    <constraint firstItem="C0g-uL-F3a" firstAttribute="leading" secondItem="CK4-AE-sih" secondAttribute="leading" id="dt7-02-OMb"/>
+                                    <constraint firstItem="ISu-3t-Cxh" firstAttribute="centerX" secondItem="zvc-Rc-nWg" secondAttribute="centerX" constant="-1.8333333333333144" id="dxH-je-Sxk"/>
+                                    <constraint firstItem="sjO-Bi-F0B" firstAttribute="top" secondItem="sTu-fK-hat" secondAttribute="bottom" constant="40" id="f1r-3b-Ij7" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12ProMax">
+                                                <real key="value" value="45"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Max">
+                                                <real key="value" value="45"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12Mini">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2G">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Pro">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="ISu-3t-Cxh" secondAttribute="bottom" constant="10" id="fWZ-gc-Db0" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12Mini">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12ProMax">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Max">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2G">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Pro">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstItem="eap-5k-Qgg" firstAttribute="top" secondItem="zvc-Rc-nWg" secondAttribute="top" constant="70" id="hVP-F9-GOD" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12ProMax">
+                                                <real key="value" value="80"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Max">
+                                                <real key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                <real key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12">
+                                                <real key="value" value="65"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12Mini">
+                                                <real key="value" value="65"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11">
+                                                <real key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2G">
+                                                <real key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Pro">
+                                                <real key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstItem="4OT-an-6c5" firstAttribute="trailing" secondItem="CK4-AE-sih" secondAttribute="trailing" id="iJl-sN-4nO"/>
+                                    <constraint firstItem="ul0-fl-07p" firstAttribute="centerX" secondItem="zvc-Rc-nWg" secondAttribute="centerX" id="m8w-fJ-Xd9"/>
+                                    <constraint firstItem="CK4-AE-sih" firstAttribute="top" secondItem="eap-5k-Qgg" secondAttribute="bottom" constant="80" id="tv3-3h-Mgf" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12ProMax">
+                                                <real key="value" value="80"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Max">
+                                                <real key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                <real key="value" value="55"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12">
+                                                <real key="value" value="65"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone12Mini">
+                                                <real key="value" value="65"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11">
+                                                <real key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2G">
+                                                <real key="value" value="45"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Pro">
+                                                <real key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstItem="2i2-4a-6Cq" firstAttribute="top" secondItem="sjO-Bi-F0B" secondAttribute="bottom" constant="20" id="txI-RP-zBj"/>
+                                    <constraint firstItem="UuQ-3j-UU0" firstAttribute="top" secondItem="4OT-an-6c5" secondAttribute="bottom" constant="8" id="ujC-TQ-W4H"/>
+                                    <constraint firstItem="CK4-AE-sih" firstAttribute="centerX" secondItem="zvc-Rc-nWg" secondAttribute="centerX" id="y9h-SP-J4S"/>
+                                    <constraint firstItem="sjO-Bi-F0B" firstAttribute="trailing" secondItem="CK4-AE-sih" secondAttribute="trailing" id="zct-Yf-eHa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eap-5k-Qgg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.270531" id="0aC-wp-TPp"/>
+                            <constraint firstItem="zvc-Rc-nWg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9NX-6b-Ira"/>
+                            <constraint firstItem="C0g-uL-F3a" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0669643" id="Cpd-3i-InV"/>
+                            <constraint firstItem="FqV-jn-Ydx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dog-FT-KJd"/>
+                            <constraint firstItem="zvc-Rc-nWg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GOL-uc-BVN"/>
+                            <constraint firstItem="kOP-Ax-cnq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0234375" id="Jx8-l6-Mvh"/>
+                            <constraint firstItem="eap-5k-Qgg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0825893" id="K4l-xQ-Nip"/>
+                            <constraint firstItem="CK4-AE-sih" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.73913" id="LWp-ej-x0I"/>
+                            <constraint firstItem="CK4-AE-sih" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0669643" id="Ntr-ew-SbR"/>
+                            <constraint firstItem="sTu-fK-hat" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0313175" id="RBB-iy-KcB"/>
+                            <constraint firstItem="FqV-jn-Ydx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ud1-rA-bV1"/>
+                            <constraint firstItem="4OT-an-6c5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.73913" id="XlY-LL-RzT"/>
+                            <constraint firstItem="zvc-Rc-nWg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Y42-ZF-rNy"/>
+                            <constraint firstItem="n9L-so-PuF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cFq-PH-kwe"/>
+                            <constraint firstItem="ZCt-l9-YOz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0178571" id="cvP-XU-A0o"/>
+                            <constraint firstItem="ZCt-l9-YOz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.0483092" id="fdE-yf-yQD"/>
+                            <constraint firstItem="n9L-so-PuF" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="hac-gI-GId"/>
+                            <constraint firstItem="n9L-so-PuF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nnm-Pe-2a1"/>
+                            <constraint firstItem="sjO-Bi-F0B" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0669643" id="ofd-KV-EI2"/>
+                            <constraint firstItem="2i2-4a-6Cq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.73913" id="q7n-ec-DTn"/>
+                            <constraint firstItem="n9L-so-PuF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qfJ-Cg-UIJ"/>
+                            <constraint firstItem="4OT-an-6c5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0669643" id="rCz-Rt-amf"/>
+                            <constraint firstItem="2i2-4a-6Cq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0669643" id="spw-Vv-OET"/>
+                            <constraint firstItem="kOP-Ax-cnq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.0434783" id="uKN-8F-PNM"/>
+                            <constraint firstItem="FqV-jn-Ydx" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="wIY-VU-nOg"/>
+                            <constraint firstItem="FqV-jn-Ydx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wP8-8y-5zs"/>
+                            <constraint firstItem="zvc-Rc-nWg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y1K-6x-g48"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="C6m-tR-84s" id="dKd-lc-1ho"/>
+                        <outlet property="emailView" destination="CK4-AE-sih" id="b4g-Hy-R34"/>
+                        <outlet property="errorLabel" destination="UuQ-3j-UU0" id="Io2-cO-OFk"/>
+                        <outlet property="eyeButton" destination="7A5-1I-iK6" id="CPe-bh-Lxy"/>
+                        <outlet property="forgotTopConstraint" destination="704-bf-zHn" id="Hss-TG-bHu"/>
+                        <outlet property="passwordTextField" destination="3ci-yc-ey0" id="lUr-pn-TnW"/>
+                        <outlet property="passwordView" destination="4OT-an-6c5" id="gag-ZN-Tnh"/>
+                        <outlet property="signInButton" destination="sjO-Bi-F0B" id="YUL-S3-dcU"/>
+                        <outlet property="signInGoogleButton" destination="C0g-uL-F3a" id="Zoa-Bg-rhp"/>
+                        <outlet property="signInwithAppleButton" destination="2i2-4a-6Cq" id="zjK-0J-2Na"/>
+                        <segue destination="6Hs-FB-Ku0" kind="show" identifier="toSignUpSegue" id="7gd-5J-tS8"/>
+                        <segue destination="yr3-P3-UDk" kind="show" identifier="toForgotPasswordSegue" id="w3a-Ll-0YA"/>
+                        <segue destination="IwJ-DD-X8X" kind="show" identifier="toConditionsSegue" id="cZs-Nu-qaH"/>
+                        <segue destination="zrJ-xf-GNk" kind="show" identifier="toFeedSegue" animates="NO" id="XTf-RD-WVC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-181.15942028985509" y="85.714285714285708"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="Ade-Oz-RJZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feed" id="zrJ-xf-GNk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hWu-La-WpZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xR-Ga-kvP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="-32"/>
+        </scene>
+        <!--ForgotPassword-->
+        <scene sceneID="ZTq-Qk-MQR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ForgotPassword" id="yr3-P3-UDk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1gQ-Bh-Fon"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKM-qh-7s6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="383" y="23"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="ax0-uj-Ugw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" id="6Hs-FB-Ku0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uFA-Ad-ikx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8H-h5-024" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="86"/>
+        </scene>
+        <!--Conditions-->
+        <scene sceneID="9JM-l5-VMY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Conditions" id="IwJ-DD-X8X" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="JH0-0C-hpx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dT-Lp-rjf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="145"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icApple" width="19" height="19"/>
+        <image name="icCloseEyePassword" width="24" height="24"/>
+        <image name="icEmail" width="40" height="32"/>
+        <image name="icGoogle" width="24" height="24"/>
+        <image name="icLogo" width="156" height="84"/>
+        <image name="icPassword" width="37" height="42"/>
+        <image name="imgSignIn" width="750" height="1624"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

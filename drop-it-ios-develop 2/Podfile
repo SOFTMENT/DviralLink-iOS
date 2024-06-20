@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DropIt' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for DropIt
+
+ pod 'AMPopTip', '4.4.0'
+
+ pod 'Firebase/Analytics', '8.3.0'
+
+ pod 'Firebase/Messaging', '8.3.0'
+
+ pod 'GoogleSignIn', '5.0.2'
+
+ pod 'LayoutHelper', '1.0.0'
+ 
+ pod 'lottie-ios', '3.2.1'
+
+ pod 'MBProgressHUD', '1.2.0'
+ 
+ pod 'Moya', '14.0.0'
+
+ pod 'Moya-ObjectMapper', '2.9'
+
+ pod 'ObjectMapper', '4.2.0'
+ 
+ pod 'ReachabilitySwift', '5.0.0'
+  
+ pod 'SwiftLint', '0.43.1'
+
+ pod 'XCDYouTubeKit', '2.15.2'
+
+ pod 'youtube-ios-player-helper', '1.0.2'
+
+ pod 'Kingfisher'
+
+end

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="177" id="OtE-py-TTv" customClass="MainCommentsTableViewCell" customModule="DropIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OtE-py-TTv" id="OVb-zv-oGg">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="177"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLi-Qt-djX">
+                        <rect key="frame" x="20" y="11" width="290" height="155"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ecH-nc-Gt9">
+                                <rect key="frame" x="0.0" y="10" width="290" height="135"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kmw-MY-kzh">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxe-fL-msl">
+                                                <rect key="frame" x="0.0" y="0.0" width="290" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33U-VU-Suj">
+                                        <rect key="frame" x="0.0" y="17" width="290" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Link">
+                                            <color key="titleColor" systemColor="linkColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedLinkButton:" destination="OtE-py-TTv" eventType="touchUpInside" id="QhA-Vm-Grq"/>
+                                        </connections>
+                                    </button>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68o-3F-4Gt">
+                                        <rect key="frame" x="0.0" y="46" width="290" height="59"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="imCover" translatesAutoresizingMaskIntoConstraints="NO" id="i05-9c-p7S">
+                                                <rect key="frame" x="0.0" y="0.0" width="290" height="59"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="dcW-P1-b77"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="i05-9c-p7S" secondAttribute="width" id="BGn-sJ-yqL"/>
+                                            <constraint firstAttribute="trailing" secondItem="i05-9c-p7S" secondAttribute="trailing" id="NVs-rV-xEF"/>
+                                            <constraint firstAttribute="bottom" secondItem="i05-9c-p7S" secondAttribute="bottom" id="QJO-hf-ORn"/>
+                                            <constraint firstItem="i05-9c-p7S" firstAttribute="leading" secondItem="68o-3F-4Gt" secondAttribute="leading" id="QRD-Fw-XTP"/>
+                                            <constraint firstAttribute="height" secondItem="i05-9c-p7S" secondAttribute="height" id="b4m-yL-6wv"/>
+                                            <constraint firstItem="i05-9c-p7S" firstAttribute="top" secondItem="68o-3F-4Gt" secondAttribute="top" id="vfd-ln-WWr"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5T0-TH-bTS">
+                                        <rect key="frame" x="0.0" y="105" width="290" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VD-Jv-dsh">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Author" image="icUser">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tappedAuthorButton:" destination="OtE-py-TTv" eventType="touchUpInside" id="pEx-gg-mIw"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcg-oZ-COn">
+                                                <rect key="frame" x="255" y="0.0" width="35" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="CXA-Cp-OnW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="d6r-kw-cJJ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kmw-MY-kzh" firstAttribute="leading" secondItem="ecH-nc-Gt9" secondAttribute="leading" id="9Ov-Ps-6PH"/>
+                                    <constraint firstItem="33U-VU-Suj" firstAttribute="leading" secondItem="ecH-nc-Gt9" secondAttribute="leading" id="ZuY-2s-7Ic"/>
+                                    <constraint firstAttribute="trailing" secondItem="5T0-TH-bTS" secondAttribute="trailing" id="paO-6p-wQ1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ecH-nc-Gt9" secondAttribute="bottom" constant="10" id="0tA-cg-eNz"/>
+                            <constraint firstItem="ecH-nc-Gt9" firstAttribute="top" secondItem="lLi-Qt-djX" secondAttribute="top" constant="10" id="1Hu-sz-vxF"/>
+                            <constraint firstItem="ecH-nc-Gt9" firstAttribute="leading" secondItem="lLi-Qt-djX" secondAttribute="leading" id="HkK-jb-RMo"/>
+                            <constraint firstAttribute="trailing" secondItem="ecH-nc-Gt9" secondAttribute="trailing" id="KNK-CO-TFZ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gth-oN-qXf">
+                        <rect key="frame" x="0.0" y="166" width="330" height="1"/>
+                        <color key="backgroundColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="B3T-FH-981"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="lLi-Qt-djX" secondAttribute="trailing" id="5pU-e8-9Qi"/>
+                    <constraint firstItem="Gth-oN-qXf" firstAttribute="leading" secondItem="OVb-zv-oGg" secondAttribute="leading" id="9Ja-vh-kXZ"/>
+                    <constraint firstItem="lLi-Qt-djX" firstAttribute="top" secondItem="OVb-zv-oGg" secondAttribute="topMargin" id="Rfb-85-QCE"/>
+                    <constraint firstAttribute="trailing" secondItem="Gth-oN-qXf" secondAttribute="trailing" id="Wdj-7g-9C2"/>
+                    <constraint firstItem="Gth-oN-qXf" firstAttribute="top" secondItem="lLi-Qt-djX" secondAttribute="bottom" id="Wfn-AA-rXi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lLi-Qt-djX" secondAttribute="bottom" id="hdm-s5-buA"/>
+                    <constraint firstItem="lLi-Qt-djX" firstAttribute="leading" secondItem="OVb-zv-oGg" secondAttribute="leadingMargin" id="xTW-TK-WIr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="authorButton" destination="0VD-Jv-dsh" id="P2f-hY-JhD"/>
+                <outlet property="linkButton" destination="33U-VU-Suj" id="6md-hQ-dvI"/>
+                <outlet property="postImageView" destination="i05-9c-p7S" id="rWW-ed-XhS"/>
+                <outlet property="postView" destination="68o-3F-4Gt" id="uEB-Ju-YmM"/>
+                <outlet property="songLabel" destination="Zxe-fL-msl" id="aWw-WY-th4"/>
+                <outlet property="timeLabel" destination="Rcg-oZ-COn" id="bKG-zR-bf2"/>
+            </connections>
+            <point key="canvasLocation" x="723.1884057971015" y="20.424107142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icUser" width="15" height="15"/>
+        <image name="imCover" width="500" height="500"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

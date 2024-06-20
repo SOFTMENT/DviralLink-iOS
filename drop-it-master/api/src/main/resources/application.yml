@@ -1,0 +1,50 @@
+server:
+  port: 80
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/drop_it
+    username: postgres
+    password: dropit
+  jpa:
+    generate-ddl: false
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: dvirallinkapplication@gmail.com
+    password: Gerald12.
+    properties.mail:
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+      debug: true
+      from: dropitapplication@gmail.com
+      transport:
+        protocol: smtp
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    baseline-version: 0
+    user: postgres
+    password: dropit
+    schemas: public
+    url: jdbc:postgresql://localhost:5432/drop_it
+    locations: classpath:db/migration
+springdoc:
+  api-docs:
+    path: /api-docs
+jwt:
+  secret: 63759fc304824036546389eef0c577e54adc2a5bf16d8d9bc5453afc08264e5e
+link:
+  sources:
+    - https://open.spotify.com
+    - https://music.apple.com
+    - https://www.youtube.com
+    - https://youtu.be
+api:
+  key: AIzaSyDH06GvKyWL015fM6C1xWSILd6XvSUxN7o
+spotify:
+  clientId: 51f64c86b6594693a17ecdc62c559458
+  clientSecret: cac176baa68245dfa1c1109e35a6a492
+apple:
+  storefront: 143565
